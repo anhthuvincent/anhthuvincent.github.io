@@ -1,0 +1,199 @@
+﻿body {
+  background-image: url('../Pics/bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  font-weight: normal;
+  margin: 0;
+}
+h1 {
+  color: #e6576f;
+  text-shadow: 0 2px 0 white;
+  text-align: center;
+  font-style: italic;
+}
+h2 {
+  font-family: "Glass Antiqua", cursive, Georgia, serif;
+  font-size: 150%;
+  margin: 20px;
+}
+h3 {
+  font-size: 120%;
+  margin: 20px;
+}
+img {
+  color: red;
+  margin: 10px;
+}
+p {
+  color: black;
+  text-indent: 0px;
+  text-align: justify;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  /*font-size: 16px;*/
+  line-height: 1.5;
+  margin: 20px;
+}
+p::first-letter {
+  font-size: x-large;
+}
+
+/* Presentation */
+.site {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: 320px;
+}
+@media screen and (min-width: 480px) {
+  .site {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .site {
+    width: 700px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .site {
+    width: 800px;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .site {
+    width: 1000px;
+  }
+}
+
+/* Navigation bar */
+nav {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #0f0f0f;
+  font-family: "Glass Antiqua", cursive, Georgia, serif;
+  padding: 10px 20px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+nav ul li:first-child { /* Navigation home quick button */
+  position: relative;
+  display: inline-block;
+  min-width: 110px;
+  background-color: transparent;
+  color: #0f0f0f;
+  padding: 16px 0;
+  font-size: 14px;
+  font-family: "Glass Antiqua", cursive, Georgia, serif;
+  border: none;
+  cursor: pointer;
+}
+nav ul li:first-child a {
+  color: #0f0f0f;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+nav ul li { /* Navigation dropdown */
+  position: relative;
+  display: inline-block;
+  min-width: 110px;
+}
+nav ul li:hover div{
+  display: block;
+}
+nav ul li:hover button {
+  background-color: white;
+}
+nav ul li button { /* Navigation dropdown button */
+  background-color: transparent;
+  color: #0f0f0f;
+  min-width: inherit;
+  padding: 16px 0;
+  font-size: 14px;
+  font-family: "Glass Antiqua", cursive, Georgia, serif;
+  border: none;
+  cursor: pointer;
+}
+nav ul li div { /* Navigation dropdown content */
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: inherit;
+  z-index: 1;
+}
+nav ul li div a {
+  color: #0f0f0f;
+  padding: 12px 15px;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+nav ul li div a:hover {
+  background-color: lightgray;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    position: static;
+    top: auto;
+  }
+  nav ul li:first-child {
+    display: block;
+	width: 100%;
+  }
+  nav ul li {
+    display: block;
+	min-width: 100%;
+  }
+}
+
+/* Illustrations */
+.text-pic-right {
+  float: right;
+  width: auto;
+  max-height: 350px;
+  margin: 0 0 20px 20px;
+}
+
+.text-pic-left {
+  float: left;
+  width: auto;
+  max-height: 350px;
+  margin: 0 20px 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .text-pic-right, .text-pic-left {
+    float: none;
+    width: 100%;
+	margin: 10px 0;
+  }
+}
+
+/* Corner pic*/
+.corner-pic {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  top: 5px;
+  left: 5px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .corner-pic {
+    visibility: hidden;
+  }
+}
+
+/* Clearfix */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
