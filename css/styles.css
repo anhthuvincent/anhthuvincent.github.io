@@ -5,9 +5,7 @@ body {
   background-size: cover;
   font-weight: normal;
   height: 100vh;
-}
-nav {
-  margin-bottom: 80px;
+  margin-top: 80px;
 }
 
 .album-item {
