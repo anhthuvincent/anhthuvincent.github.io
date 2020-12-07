@@ -1,13 +1,10 @@
-body, html {
-  height: 100%;
-}
 body {
   background-image: url('../pics/bg.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;  
   background-size: cover;
   font-weight: normal;
-  margin-top: 80px;
+  height: 100vh;
 }
 
 .album-item {
