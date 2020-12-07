@@ -6,6 +6,9 @@ body {
   font-weight: normal;
   height: 100vh;
 }
+nav {
+  margin-bottom: 80px;
+}
 
 .album-item {
   opacity: 1.0;
