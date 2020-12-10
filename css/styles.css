@@ -4,8 +4,7 @@ body {
   background-attachment: fixed;  
   background-size: cover;
   font-weight: normal;
-  height: 100vh;
-  margin-top: 80px;
+  min-height: 100vh;
 }
 
 .album-item {
