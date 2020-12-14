@@ -11,8 +11,11 @@ body {
   width:40px;
 }
 
-.card-custom {
+.card-custom-bg {
   background: rgba(255, 255, 255, 0.8);
+}
+
+.card-custom-w {
   min-width: 200px;
   max-width: 600px;
 }
