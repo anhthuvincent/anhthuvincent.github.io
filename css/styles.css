@@ -64,7 +64,14 @@ body {
   }
 }
 
+#ScrollToTopBtn:visited {
+  opacity: 0.5;
+}
+
 #ScrollToTopBtn:hover {
-  background-color: #555;
   opacity: 1.0;
+}
+
+#ScrollToTopBtn:active {
+  opacity: 0.5;
 }
