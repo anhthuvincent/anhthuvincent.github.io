@@ -1,10 +1,11 @@
+/* General */
 body {
   background-image: url('../pics/bg.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;  
   background-size: cover;
   font-weight: normal;
-  min-height: 100vh;
+  min-height: 100vh; /* ensures background covers all the page on chrome android */
 }
 
 @media screen and (min-width: 576px) {
@@ -14,12 +15,14 @@ body {
   }
 }
 
+/* Navigation */
 .nav-logo {
   width:40px;
 }
 
+/* Cards */
 .card-custom-bg {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.8); /* white, slightly transparent */
 }
 
 .card-custom-w {
@@ -27,9 +30,42 @@ body {
   max-width: 600px;
 }
 
+/* Album items */
 .album-item {
   opacity: 1.0;
 }
 .album-item:hover {
   opacity: 0.9;
+}
+
+/* Scroll to top button */
+#ScrollToTopBtn {
+  visibility: hidden; /* hidden by default */
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  background-color: #6c757d; /* bootstrap 4 secondary */
+  color: white;
+  cursor: pointer; 
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 576px) {
+  #ScrollToTopBtn {
+    margin-bottom: 0;
+    position: fixed; /* fixed/sticky position */
+    bottom: 20px; /* place the button at the bottom of the page */
+    right: 20px; /* place the button at the right */
+    z-index: 99; /* make sure it does not overlap */
+	opacity: 0.5; /* see-through */
+  }
+}
+
+#ScrollToTopBtn:hover {
+  background-color: #555;
+  opacity: 1.0;
 }
