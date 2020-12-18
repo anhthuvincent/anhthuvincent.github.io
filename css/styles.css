@@ -51,7 +51,7 @@ body {
   cursor: pointer; 
   padding: 10px 15px;
   border-radius: 50%;
-  font-size: 18px;
+  opacity: 0.5; /* see-through */
 }
 
 @media screen and (min-width: 576px) {
@@ -61,7 +61,6 @@ body {
     bottom: 20px; /* place the button at the bottom of the page */
     right: 20px; /* place the button at the right */
     z-index: 99; /* make sure it does not overlap */
-	opacity: 0.5; /* see-through */
   }
 }
 
