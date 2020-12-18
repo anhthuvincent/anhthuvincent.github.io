@@ -62,16 +62,8 @@ body {
     right: 20px; /* place the button at the right */
     z-index: 99; /* make sure it does not overlap */
   }
-}
 
-#ScrollToTopBtn:visited {
-  opacity: 0.5;
-}
-
-#ScrollToTopBtn:hover {
-  opacity: 1.0;
-}
-
-#ScrollToTopBtn:active {
-  opacity: 0.5;
+  #ScrollToTopBtn:hover {
+    opacity: 1.0;
+  }
 }
